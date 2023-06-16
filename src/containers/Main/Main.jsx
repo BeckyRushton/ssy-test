@@ -10,8 +10,11 @@ const Main = () => {
   return (
     <div className="main-section">
       <DailyFeed />
-      <InputBox />
-      <Button buttonText={"SUBMIT"} />
+      <div className="date-section">
+        <InputBox />
+        <Button buttonText={"SUBMIT"} />
+      </div>
+
       <Table />
       <Chart />
     </div>

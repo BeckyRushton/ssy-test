@@ -1,0 +1,16 @@
+@import "../../styles/app.scss";
+.input-date {
+  padding: 20px;
+  &__label {
+    font-family: $main-font;
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+  &__input {
+    height: 60px;
+    width: 200px;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
