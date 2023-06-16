@@ -1,0 +1,23 @@
+@import "../../styles/app.scss";
+.table-section {
+  font-family: $main-font;
+  font-weight: 300;
+  &__table {
+    color: $almostBlack;
+    background-color: $white;
+    border: 1px solid $almostBlack;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px $almostBlack;
+    width: 1500px;
+    height: auto;
+    padding: 10px;
+    &--header {
+      background-color: $lightGrey;
+      height: 50px;
+    }
+    &--label {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+}

@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./DailyFeed.scss";
 
 const DailyFeed = () => {
-  const [updateData, setUpdateData] = useState("");
+  const [updateData, setUpdateData] = useState();
 
   useEffect(() => {
     getUpdates();
-    [];
-  });
+  }, []);
 
   const getUpdates = async () => {
     let url =
