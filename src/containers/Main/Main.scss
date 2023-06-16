@@ -10,6 +10,12 @@
   height: 100vh;
   padding: 20px;
   color: $white;
+  &__top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+  }
 }
 .date-section {
   display: flex;

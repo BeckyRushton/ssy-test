@@ -9,10 +9,12 @@ import Button from "../../components/Button/Button";
 const Main = () => {
   return (
     <div className="main-section">
-      <DailyFeed />
-      <div className="date-section">
-        <InputBox />
-        <Button buttonText={"SUBMIT"} />
+      <div className="main-section__top">
+        <DailyFeed />
+        <div className="date-section">
+          <InputBox />
+          <Button buttonText={"SUBMIT"} />
+        </div>
       </div>
 
       <Table />
