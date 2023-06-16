@@ -1,6 +1,24 @@
-@import url(./_themes.scss);
+// Colours
+$darkGold: #9a8250;
+$darkGrey: #444444;
+$lightGrey: #b1b1b1;
+$almostBlack: #353535;
+$white: white;
+$black: black;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
+$main-font: "Lato", sans-serif;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
 }

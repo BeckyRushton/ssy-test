@@ -1,0 +1,12 @@
+@import "../../styles/app.scss";
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $darkGold;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  color: $white;
+}
