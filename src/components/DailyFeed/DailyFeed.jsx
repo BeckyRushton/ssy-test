@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./DailyFeed.scss";
 
 const DailyFeed = () => {
-  // will need props passed down
+  const [updateData, setUpdateData] = useState("");
+
+  useEffect(() => {
+    getUpdates();
+    [];
+  });
+
+  const getUpdates = async () => {
+    let url =
+      "https://www.ssyreports.com/api/ExampleEodCommentary/zTsykzVaLghw5Tm3/20230605";
+
+    const res = await fetch(url);
+    let data = await res.json();
+    setUpdateData(data);
+  };
   return (
     <div className="daily-feed">
       <h2 className="daily-feed__title">UPDATES: </h2>
