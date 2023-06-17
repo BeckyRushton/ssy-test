@@ -20,8 +20,18 @@ const DailyFeed = () => {
     <div className="daily-feed">
       <h2 className="daily-feed__title">UPDATES: </h2>
       <div className="daily-feed__info">
-        <p className="daily-feed__info--market">market</p>
-        <p className="daily-feed__info--cape">cape</p>
+        <h3>Market</h3>
+        <p className="daily-feed__info--market">
+          {updateData && (
+            <td dangerouslySetInnerHTML={{ __html: updateData[0].comment }} />
+          )}
+        </p>
+        <h3>Cape</h3>
+        <p className="daily-feed__info--cape">
+          {updateData && (
+            <td dangerouslySetInnerHTML={{ __html: updateData[1].comment }} />
+          )}
+        </p>
       </div>
     </div>
   );
