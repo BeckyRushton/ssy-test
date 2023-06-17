@@ -2,16 +2,16 @@ import React from "react";
 import "./InputBox.scss";
 
 const InputBox = ({ onChange }) => {
-  let currentDate = Date.now;
   return (
     <div className="input-date">
       <label className="input-date__label">REPORTING DATE: </label>
-      <input
-        type="date"
-        className="input-date__input"
-        placeholder="yyyy-mm-dd"
-        onChange={onChange}
-      />
+
+      <select name="dateOption" id="inputBox" onChange={onChange}>
+        <option value="all">See all</option>
+        <option value="2024-01-01">2024-01-01</option>
+        <option value="2025-01-01">2025-01-01</option>
+        <option value="2026-01-01">2026-01-01</option>
+      </select>
     </div>
   );
 };
