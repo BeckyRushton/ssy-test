@@ -15,5 +15,5 @@ const InputBox = ({ onChange }) => {
     </div>
   );
 };
-
+// Need to add an if statement that makes sure that if see all is the option, then table resets data
 export default InputBox;
