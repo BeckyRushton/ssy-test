@@ -36,6 +36,9 @@ const Main = () => {
         })
       );
     }
+    if (inputValue === "all") {
+      setVesselData(tableData);
+    }
   }, [inputValue]);
 
   useEffect(() => {
@@ -71,7 +74,7 @@ const Main = () => {
       </div>
       {vesselData && <Table vesselData={tableJSX} />}
 
-      <Chart />
+      {vesselData && <Chart />}
     </div>
   );
 };

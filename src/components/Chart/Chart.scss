@@ -1,11 +1,19 @@
 @import "../../styles/app.scss";
 
 .chart-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__title {
     font-size: 1.8rem;
     font-weight: 300;
     color: $black;
     padding: 10px 0;
     font-family: $main-font;
+  }
+  &__chart {
+    width: 1000px;
   }
 }
