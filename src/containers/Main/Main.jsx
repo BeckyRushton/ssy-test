@@ -32,7 +32,7 @@ const Main = () => {
       let tableCopy = [...tableData];
       setVesselData(
         tableCopy.filter((route) => {
-          return route.periodStartDate.substring(0, 10) == inputValue;
+          return route.periodStartDate.substring(0, 10) === inputValue;
         })
       );
     }
@@ -63,25 +63,15 @@ const Main = () => {
 
   return (
     <div className="main-section">
-      <div className="main-section__top">
-        <div className="main-section__top--left">
-          <DailyFeed />
-        </div>
-        <div className="main-section__top--right">
-          <div className="date-section">
-            <InputBox onChange={handleInputChange} />
-            <Button
-              buttonText={"SUBMIT"}
-              handleButtonClick={handleButtonClick}
-            />
-          </div>
-          {vesselData && <Table vesselData={tableJSX} />}
-        </div>
-      </div>
+      <DailyFeed />
 
-      <div className="main-section__bottom">
-        <Chart />
+      <div className="date-section">
+        <InputBox onChange={handleInputChange} />
+        <Button buttonText={"SUBMIT"} handleButtonClick={handleButtonClick} />
       </div>
+      {vesselData && <Table vesselData={tableJSX} />}
+
+      <Chart />
     </div>
   );
 };

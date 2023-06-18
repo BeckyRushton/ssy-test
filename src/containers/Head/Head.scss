@@ -2,7 +2,7 @@
 .head {
   background-color: $black;
   width: 100%;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,11 +10,12 @@
   &__title {
     font-family: $main-font;
     font-weight: lighter;
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: $white;
     margin-bottom: 20px;
   }
   &__img {
     width: 20%;
+    margin-top: 10px;
   }
 }

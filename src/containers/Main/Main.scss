@@ -2,35 +2,18 @@
 .main-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   align-items: center;
   justify-content: space-evenly;
   background-color: $darkGold;
   width: 100vw;
   padding: 20px;
   color: $white;
-  &__top {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    width: 100%;
-    &--right {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-  }
-
-  &__bottom {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-size: 3rem;
-  }
 }
 
 .date-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
